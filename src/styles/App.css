@@ -1,0 +1,13 @@
+.App {
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .home-navbar {
+    width: 93%;
+    margin: 0 auto;
+  }
+  .home-main {
+    width: 93%;
+    margin: 0 auto;
+  }

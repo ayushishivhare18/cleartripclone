@@ -1,0 +1,176 @@
+.flight-booking-navabr,
+#flight-booking-main{
+    width: 85%;
+    margin: 0 auto;
+}
+.booking-details{
+    width: 60vw;
+}
+
+.number-circle{
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid gray;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashed-line-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+  }
+  .start-circle,
+  .end-circle {
+    position: absolute;
+    
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #999999; /* Replace with your desired color */
+  }
+  .start-circle{
+    top: 1px;
+  }
+  .end-circle {
+    bottom: 5px;
+  }
+  .dashed-line {
+    height: 100px; /* Replace with your desired height */
+    border-left: 2px dashed #999999; /* Replace with your desired color */
+    margin-left: 5px; /* Adjust the margin based on your design */
+  }
+/* fare selection */
+ .fare{
+    display: flex;
+    justify-content: space-between;
+ } 
+ .fare-selected{
+  background-color: rgb(47, 47, 233);
+ }
+.mobile-label,
+.email-label{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+ .mobile-input,
+ .email-input{
+  width: 30vw;
+  border: 1px solid lightgray;
+  font-weight: 400;
+  padding-left: 20px;
+  border-radius: 5px;
+ }
+ .email-input{
+  width: 36.4vw;
+  height: 40px;
+ }
+ .continue-btn{
+  margin-bottom: 20px;
+  width: 12vw;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF4F17;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+ }
+ .continue-btn:hover{
+  background-color: #D4581D;
+  cursor: pointer;
+ }
+ .mobile-input:hover,
+ .email-input:hover{
+   border-color: #FF4F17;
+ }
+ .mobile-input:active
+ {
+   border-color: #FF4F17;
+ }
+ .mobile-input:focus
+ {
+   border-color: #FF4F17;
+ }
+ .email-input:active{
+  border-color: #FF4F17;
+ }
+ .email-input:focus{
+  border-color: #FF4F17;
+ }
+
+
+ @media screen and (min-width: 320px) {
+  
+  .flight-booking-navabr,
+  #flight-booking-main{
+    width: 92%;
+  }
+  .booking-image{
+    width: 3rem;
+  }
+  .mobile-input{
+    width: 58vw;
+    padding-left: 10px;
+  }
+  .email-input{
+    width: 80vw;
+  }
+  .continue-btn{
+    width: 80vw;
+  }
+ }
+ @media screen and (min-width: 450px) {
+  .mobile-input{
+    width: 60vw;
+  }
+ }
+ @media screen and (min-width: 550px) {
+  .mobile-input{
+    width: 64vw;
+  }
+  .continue-btn{
+    width: 20vw;
+  }
+ }
+
+ @media screen and (min-width: 900px) {
+  #price-cards{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+  }
+  .email-input{
+    width: 54.5vw;
+  }
+  .continue-btn{
+    width: 30vw;
+  } 
+ }
+ @media screen and (min-width: 1280px) {
+ 
+ .flight-booking-navabr,
+ #flight-booking-main{
+   width: 88%;
+ }
+ .booking-image{
+   width: 3rem;
+ }
+ .mobile-input{
+  width: 40vw;
+ }
+ .email-input{
+   width: 47vw;
+ }
+ .continue-btn{
+   width: 12rem;
+ } 
+}
+
+  

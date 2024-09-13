@@ -1,0 +1,307 @@
+.card-header {
+    margin-left: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #composition-button {
+    color: #1a1a1a;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #source-input {
+    width: 19rem;
+    height: 3.5rem;
+    padding-left: 4rem;
+  }
+  #destination-input {
+    width: 19rem;
+    height: 3.5rem;
+    padding-left: 5rem;
+  }
+  input[type="text"] {
+    font-size: 16px;
+  }
+  .source-dropdown {
+    width: 200px;
+  }
+  
+  .recent-search-card {
+    width: 12rem;
+    height: 5rem;
+    margin-left: -1.2rem;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+  }
+  
+  /* flight search card css */
+  
+  .flight-search-form-card {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 20px;
+    height: fit-content;
+  }
+  
+  .autoComplete {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: 540;
+    color: #525252;
+    background-color: inherit;
+    border-radius: 2rem;
+    border: 1px solid lightgray;
+    cursor: pointer;
+  }
+  
+  .booking-type-btn-active,
+  .fare-btn-active {
+    background-color: #d6e8fc;
+    color: #3366cc;
+    border-color: #3366cc;
+  }
+  
+  .inputBox {
+    width: 30vw;
+    height: 56px;
+    border-radius: 6px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    padding-left: 60px;
+    transition: 0.5s ease-in-out;
+  }
+  .inputBox:focus {
+    outline: 0;
+    border-color: #0f53a0;
+    scale: 1.05;
+  }
+  
+  .f-switch-btn {
+    position: absolute;
+    left: 47%;
+    top: 0.7rem;
+    z-index: 1;
+    cursor: no-drop;
+  }
+  .f-landing-icon,
+  .f-takeoff-icon {
+    position: absolute;
+    top: 0.8rem;
+    z-index: 1;
+  }
+  .f-landing-icon {
+    right: 5rem;
+  }
+  .f-takeoff-icon {
+    left: 1rem;
+  }
+  .flight-input-dropdown {
+    width: 19.8rem;
+    max-height: 40vh;
+    margin-left: -6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 1px 1px 10px 1px gray;
+    margin-top: 60px;
+    position: absolute;
+    z-index: 100;
+    overflow: hidden;
+    font-weight: 500;
+  }
+  .flight-option {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+  .flight-option:hover {
+    cursor: pointer;
+    background-color: #eff5fc;
+  }
+  .option-btn {
+    text-align: left;
+    border: none;
+    background-color: inherit;
+    font-weight: bold;
+    color: gray;
+    padding: 4px;
+    width: 20%;
+  }
+  .option-btn:hover {
+    cursor: pointer;
+    background-color: #3366cc;
+    color: #eff5fc;
+  }
+  .destination-popper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 1px gray;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 100;
+  }
+  .dropdown > div {
+    text-align: left;
+    height: 18px;
+    padding: 8px;
+    color: rgb(43, 43, 43);
+  }
+  .dropdown > div:first-child {
+    border-top: 0;
+  }
+  .city-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* flight search card  */
+  
+  .passenger-add-container {
+    position: absolute;
+    width: 28vw;
+    height: 47vh;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+  }
+  /* date picker and search btn */
+  
+  .f-calender-icon {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    z-index: 2;
+    padding-right: 1rem;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media screen and (min-width: 320px) {
+    .passenger-add-container {
+      width: 85vw;
+      height: 44vh;
+    }
+    .list-group-item {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .inputBox {
+      width: 85vw;
+      padding-left: 60px;
+    }
+    .f-landing-icon {
+      right: 74vw;
+      top: 5.4rem;
+    }
+    .f-switch-btn {
+      left: 40vw;
+      top: 3rem;
+    }
+  }
+  
+  @media screen and (min-width: 450px) {
+    .f-landing-icon {
+      right: 79vw;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    .passenger-add-container {
+      width: 50vw;
+      height: 46vh;
+    }
+    .inputBox {
+      width: 29vw;
+      padding-left: 50px;
+    }
+    .f-takeoff-icon {
+      left: 0.7rem;
+    }
+    .f-switch-btn {
+      left: 26.4vw;
+      top: 0.7rem;
+    }
+    .f-landing-icon {
+      right: 22vw;
+      top: 0.9rem;
+    }
+    .f-calender-icon {
+      left: 1vw;
+    }
+  }
+  @media screen and (min-width: 730px) {
+    .f-landing-icon {
+      right: 24vw;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .f-landing-icon {
+      right: 24.5vw;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .f-landing-icon {
+      right: 24.5vw;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .passenger-add-container {
+      width: 30vw;
+    }
+    .list-group-item {
+      padding: 25px 10px;
+    }
+    .inputBox {
+      width: 22vw;
+      padding-left: 50px;
+    }
+    .f-landing-icon {
+      right: 18vw;
+    }
+    .f-switch-btn {
+      left: 20.5vw;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .list-group-item {
+      padding: 10px;
+      font-size: 14px;
+    }
+    .f-landing-icon {
+      right: 20vw;
+    }
+  }

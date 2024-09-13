@@ -1,0 +1,39 @@
+.other-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+  .other-links > a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .hoverStyle{
+    font-weight: 500;
+  }
+  .hoverStyle:hover{
+    text-decoration: underline;
+  }
+  
+  .route_location:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .footer_item{
+    text-decoration: none;
+  }
+  .footer_item:hover{
+    text-decoration: underline;
+  }
+  
+  @media screen and (min-width: 300px) {
+    .ft-cleartrip-logo {
+      width: 7rem;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .ft-cleartrip-logo {
+      width: 15rem;
+    }
+  }

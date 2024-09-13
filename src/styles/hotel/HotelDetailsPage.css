@@ -1,0 +1,239 @@
+.location-input-box-details{
+    width: 10rem;
+    height: 45px;
+}
+.hotel-details-input-box{
+    width: 100%;
+    height: 46px;
+    border: 1px solid #D3D3D3;
+    font-size: 16px;
+    padding-left: 30px;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    padding-left: 16px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.hotel-details-input-box:hover{
+    outline: 0;
+    border-color: #0f53a0;
+}
+.add-room-btn-details{
+    width: 10rem;
+    height: 45px;
+    border-radius: 0;
+}
+.hotel-res-login{
+    cursor: pointer;
+}
+#hotel-name{
+    width: 12vw;
+    height: 50px;
+}
+.topic{
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: black;
+}
+.active-topic {
+    color: blue;
+    border-bottom: 2px solid;
+}
+
+.left-details{
+    width: 50%;
+}
+.right-details{
+    width: 50%;
+}
+.hotel-details-main{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.amentities-list{
+    padding-left: 20px;
+}
+.guest-profile{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.check-in-out-policy{
+    margin-bottom: 10px;
+}
+.rules-list{
+    list-style-type: none;
+    padding-left: 20px;
+}
+.image-carosel{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.prev-btn , 
+.next-btn{
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+}
+.prev-btn{
+    left: 1rem;
+}
+.next-btn{
+    right: 1rem;
+}
+.image-carosel:hover .prev-btn{
+    visibility: visible;
+}
+.image-carosel:hover .next-btn{
+    visibility: visible;
+}
+.image-carosel>img{
+    width: 48vw;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.select-room-btn{
+    width: 12vw;
+    height: 50px;
+    color: white;
+    background-color: #FF4F17;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.select-room-btn:hover{
+    cursor: pointer;
+    background-color: #CE4501;
+}
+
+#rooms>h2{
+    margin-bottom: 20px;
+}
+.room-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.room-price{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.bed-details{
+    margin-top: 20px;
+}
+.room-book-btn{
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: #FF4F17;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 7px;
+}
+.room-book-btn:hover{
+    cursor: pointer;
+    background-color: #CE4501;
+}
+
+.gen-header{
+    margin-bottom: 7px;
+}
+.gen-sub-header, .review-rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.review-rating{
+    font-size: 20px;
+    font-weight: 600;
+}
+.breakfast-plan>div{
+    font-size: 18px;
+    font-weight: 500;
+}
+#amentities{
+    margin-top: 40px;
+}
+.amenty{
+    margin-top: 10px;
+}
+.amentities-list{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 300px) {
+    .left-details,.right-details{
+        width: 90vw;
+    }
+    .image-carosel>img{
+        width: 90vw;
+        height: 50vh;
+    }
+    .image-carosel{
+        justify-content: center;
+    }
+    .select-room-btn{
+        width: 30vw;
+        height: 45px;
+        font-size: 14px;
+    } 
+    .room-cards{
+        justify-content: center;
+    }
+}  
+
+@media screen and (min-width: 600px) {
+    .left-details{
+        width: 40vw;
+    }
+    .right-details{
+        width: 42vw;
+    }
+    .image-carosel>img{
+        width: 40vw;
+        height: 50vh;
+    }
+    .image-carosel{
+        justify-content: center;
+    }
+    .select-room-btn{
+        width: 8rem;
+        height: 45px;
+        font-size: 14px;
+    } 
+}  
+@media screen and (min-width: 900px) {
+    .select-room-btn{
+        height: 50px;
+        font-size: 16px;
+    } 
+    .image-carosel>img{
+        height: 60vh;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .room-cards{
+        justify-content: flex-start;
+    }
+} 

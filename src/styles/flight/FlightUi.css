@@ -1,0 +1,43 @@
+.debit-card-input,
+.debit-card-name,
+.upi-option-input{
+    width: 14rem;
+    height: 36px;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(150, 148, 148);
+    outline: 0;
+    border-radius: 5px;
+}
+#expiry-month,
+#expiry-year{
+    width: 5rem;
+    height: 28px;
+    font-size: 16px;
+    padding-left: 5px;
+    cursor: pointer;
+    border: 1px solid gray;
+    outline: 0;
+}
+
+#expiry-month:hover,
+#expiry-year:hover{
+    border-color: aqua;
+}
+.upi-option-input>label{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+/* PayConfirmModal */
+
+.pay-confirm-modal>h1, 
+.pay-confirm-modal>h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pay-confirm-modal>h1{
+    color: green;
+}

@@ -1,0 +1,111 @@
+.login-modal{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 62vh;
+    background-color: lightgray;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    padding-right: 20px;
+  }
+  
+  .modal-left{
+    max-width: 50%;
+  }  
+  
+  .form header{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: -1.5rem;
+  }
+  .form input{
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+  }
+  .form input:focus{
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  }
+  .form a{
+    font-size: 16px;
+    color: #009579;
+    text-decoration: none;
+  }
+  .form a:hover{
+    text-decoration: underline;
+  }
+  input.button{
+    margin-bottom: 0;
+  }
+  .form input.button{
+    color: #fff;
+    background: #009579;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .form input.button:hover{
+    background: #006653;
+  }
+  .signup{
+    font-size: 17px;
+    text-align: center;
+  }
+  .signup label{
+    color: #009579;
+    cursor: pointer;
+  }
+  .signup label:hover{
+    text-decoration: underline;
+  }
+  .button{
+    margin-top: -1rem;
+  }
+  
+  
+  @media screen and (min-width: 300px) {
+    .modal-left>img{
+      display: none;
+    }
+    .login-modal{
+      top: 50%;
+      left: 50%;
+      width: 90vw;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .login-modal{
+      width: 60vw;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .login-modal{
+      width: 50vw;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .modal-left>img{
+      display: inline-block;
+    }
+    .login-modal{
+      width: 52vw;
+      height: 62vh;
+    }
+  }

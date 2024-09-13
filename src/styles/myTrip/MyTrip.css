@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* NAVBAR */
+  .mytrip-profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  #mytrip-main {
+    background-image: linear-gradient(to top, white, #eff5fc);
+  }
+  .main-without-loggedin,
+  .mytrip-navbar {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-left {
+    margin-top: 40px;
+  }
+  .main-left > p {
+    margin-bottom: 10px;
+  }
+  .main-right {
+    width: 20rem;
+  }
+  .vacation-plan-photo {
+    width: 80%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .item {
+    list-style-type: none;
+  }
+  #trip-id {
+    margin-bottom: 30px;
+    height: 36px;
+    padding-left: 10px;
+  }
+  
+  /* Porfile */
+  .profile-text {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+  }
+  
+  /* main-with-looged in */
+  
+  .main-with-loggedin,
+  .main-with-header {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-with-header {
+    padding-top: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .main-with-loggedin {
+    display: flex;
+  }
+  .with-item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    width: 16rem;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  .with-right {
+    border: 1px solid lightgray;
+    width: 60rem;
+    min-height: 60vh;
+    padding: 30px 40px;
+  }
+  .activeTrip {
+    background-color: #5585b9;
+    color: white;
+  }
+  
+  /* profile content */
+  .profile-content,
+  .profile-content + h3,
+  .email-details + h3 {
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .profile-content + h3,
+  .email-details + h3 {
+    font-size: 22px;
+  }
+  .email-details > :first-child {
+    font-size: 12px;
+  }
+  .email-details > :last-child,
+  .full-name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .p-info > :first-child {
+    font-size: 12px;
+  }
+  .p-info > :last-child {
+    font-size: 18px;
+    color: gray;
+  }
+  .birthdate {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  /* bookind-details-container */
+  .bd-box,
+  .hbd-box {
+    margin-bottom: 30px;
+    list-style-type: none;
+  }
+  .bd-box span,
+  .hbd-box span {
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  @media screen and (min-width: 300px) {
+    .main-without-loggedin {
+      flex-direction: column;
+    }
+    .main-left > h1 {
+      font-size: 20px;
+    }
+    .main-left > p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .main-without-loggedin {
+      flex-direction: row;
+    }
+    .main-left > h1 {
+      font-size: 32px;
+    }
+    .main-left > p {
+      font-size: 16px;
+    }
+  }
+  
+  /* media quires for trip section after logged in */
+  @media screen and (max-width: 768px) {
+    .main-with-loggedin,
+    .main-with-header {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .with-item {
+      width: 13rem;
+    }
+    .with-right {
+      padding: 30px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .main-with-loggedin,
+    .main-with-header {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .with-left {
+      display: none;
+    }
+    .main-with-header {
+      margin-bottom: 15px;
+      padding-top: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .main-with-loggedin,
+    .main-with-header {
+      width: 95%;
+      margin: 0 auto;
+    }
+    .with-left {
+      display: none;
+    }
+    .main-with-header {
+      margin-bottom: 15px;
+      padding-top: 20px;
+    }
+    .with-right {
+      padding: 20px;
+    }
+  }
