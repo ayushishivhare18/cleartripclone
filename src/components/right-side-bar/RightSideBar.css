@@ -26,7 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    max-width: 20rem;
+    max-width: 17rem;
+    
   }
   .carousel-item-up,
   .carousel-item-down {

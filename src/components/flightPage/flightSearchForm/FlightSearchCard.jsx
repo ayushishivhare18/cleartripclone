@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import "../../../styles/flight/Flight.css";
 import { Button, Paper, Stack, ThemeProvider } from "@mui/material";
@@ -15,9 +15,10 @@ import DateInputs from "./DateInputs";
 import FareType from "./FareType";
 import { fetchFlights } from "../../../Apis/FlightSearchApi";
 import { toast, ToastContainer } from "react-toastify";
+import { FaArrowRight } from "react-icons/fa6";
+import { MdArrowDropDown } from "react-icons/md";
 
 const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
 const returnDateStyle = () => ({
   width: {
     xxs: "45vw",
@@ -60,6 +61,12 @@ export default function FlightSearchCard() {
   const { airportNames, setAirplanes } = airplaneDetails;
   // const { handleSearchClick } = searchPlane;
   const { departDay } = departvalue;
+  const [ways, setWays] = useState("one");
+  const [rotateButtonOneWay, setRotateButtonOneWay] = useState(false); 
+  const [rotateButtonPeople, setRotateButtonPeople] = useState(false);
+  const [activeReDate, setactiveReDate] = useState(false);
+  const [datere, setdatere] = useState(activeReDate ? new Date() : "");
+  const [datego, setdatego] = useState(new Date());
 
   const handleSearchClick = () => {
     if (source !== "" && destination !== "") {
@@ -147,8 +154,29 @@ export default function FlightSearchCard() {
           position: "relative",
         }}
       >
+        <div className="dropDownItem">
+          <div className="wayDefine flex-1a" onClick={() => {setRotateButtonOneWay(!rotateButtonOneWay); setRotateButtonPeople(false)}}>
+            {ways == "one" ?
+            (<p className='flex-1a'><FaArrowRight />&nbsp;One way&nbsp;&nbsp;<MdArrowDropDown /></p>):  
+            (<p className='flex-1a'>&nbsp;Round trip&nbsp;&nbsp;<MdArrowDropDown /></p>)
+          }
+          <svg width='14' height='9' fill="currentColor" className={`t-all ml-3 ${rotateButtonOneWay ? "rotateButtonzero" : "rotateButtonOneNinty"}`} style={{ color: "rgb(153, 153, 153)", transform: "rotate(-180deg)" }}></svg>
+          {rotateButtonOneWay && 
+          <div className="wayChooser flex-a">
+            <p onClick={() => {setWays("one"); setactiveReDate(false)}} className="flex-1a hov">
+              {ways==="one" && <svg width='24' height='24' viewBox="0 0 24 24" fill="none"></svg>}
+              <p className='wayChooserPtext'>&nbsp;&nbsp; One Way</p>
+            </p>
+            <p onClick={() => {setWays("two"); setdatere(datego); setactiveReDate(true)}} className="flex-1a hov">
+              {ways==="two" && <svg width='24' height='24' viewBox="0 0 24 24" fill="none"></svg>}
+              <p className='wayChooserPtext'>&nbsp;&nbsp; Round trip</p>
+            </p>
+          </div>
+          }
+          </div>
         {/* PASSENGER ADD SECTION */}
         <PassengerAdd />
+        </div>
         {/* FARE TYPE SECTION */}
         <FareType />
         {/* SOURCE DESTINATION INPUTS SECTION */}

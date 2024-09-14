@@ -43,7 +43,7 @@ const FareType = () => {
   }
 
   return (
-    <Box className="fare-type">
+    <Box className="">
       <Box
         sx={{
           zIndex: 10,

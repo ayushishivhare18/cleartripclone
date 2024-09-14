@@ -15,7 +15,37 @@
     border: none;
     padding: 10px;
     cursor: pointer;
+    margin-left: 70px;
   }
+  .wayDefine{
+    margin-top: 15px;
+    color: #1a1a1a;
+  }
+  .wayChooser{
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(211, 211, 211, 0.518);
+    background-color: white;
+    cursor: pointer;
+    width: 170px;
+    height: 100px;
+    z-index: 100;
+    margin-left: 2px;
+}
+.wayChooser p{
+    text-wrap: nowrap;
+    width: 90%;
+    border-radius: 5px;
+    height: 40px;
+}
+.wayChooser .hov:hover{
+    background-color: var(#3366cc19);
+}
+.wayChooser .wayChooserPtext{
+    float: right;
+}
   
   #source-input {
     width: 19rem;
@@ -204,6 +234,12 @@
     bottom: 1rem;
     z-index: 2;
     padding-right: 1rem;
+  }
+  .dropDownItem{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
   }
   
   /* MEDIA QUERIES */

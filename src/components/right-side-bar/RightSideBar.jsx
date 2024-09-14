@@ -56,6 +56,7 @@ const RightSideBar = () => {
           justifyContent: "center",
           alignItems: "flex-end",
           gap: 1,
+          
         }}
       >
         {/* OFFER UPPER CAROUSEL */}
@@ -92,10 +93,26 @@ const RightSideBar = () => {
             fontSize: { lg: "16px", xl: "18px" },
             mr: "50%",
             color: "#525252",
+            display: "flex",
+            flexWrap: "nowrap",  
+            alignItems: "center", 
+            justifyContent: "flex-start",
+            gap: "5rem",
+            marginRight: "10px",
+            whiteSpace: "nowrap",
           }}
           component="div"
         >
-          More offers
+          <span>More offers</span>
+          <span
+            style={{
+              color: "blue",
+              cursor: "pointer", 
+            }}
+          className="view-all" 
+          >
+          View all
+  </span>
         </Box>
         {/* OFFER LOWER CAROUSEL */}
         <div className="carousel-container-down">

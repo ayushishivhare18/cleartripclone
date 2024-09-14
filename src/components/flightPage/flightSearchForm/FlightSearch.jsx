@@ -92,10 +92,10 @@ const FlightSearch = () => {
                 <Typography>Mumbai</Typography>
                 {/* ICON */}
                 <ArrowRightAltIcon htmlColor="gray" />
-                <Typography>Kolkata</Typography>
+                <Typography>Nagpur</Typography>
               </div>
               <Typography sx={{ fontSize: 12, color: "gray" }}>
-                Fri, 23 Feb
+                Sat, 23 Aug
               </Typography>
             </Stack>
             {/* ICON */}
@@ -116,13 +116,13 @@ const FlightSearch = () => {
           >
             <Stack sx={{ textAlign: "left" }}>
               <div style={{ display: "flex" }}>
-                <Typography>Hyderabad</Typography>
+                <Typography>Bengaluru</Typography>
                 {/* ICON */}
                 <ArrowRightAltIcon htmlColor="gray" />
                 <Typography>Delhi</Typography>
               </div>
               <Typography sx={{ fontSize: 12, color: "gray" }}>
-                Fri, 23 Feb
+                Fri, 5 Sep
               </Typography>
             </Stack>
             {/* ICON */}
@@ -143,13 +143,13 @@ const FlightSearch = () => {
           >
             <Stack sx={{ textAlign: "left" }}>
               <div style={{ display: "flex" }}>
-                <Typography>Kolkata</Typography>
+                <Typography>Jaipur</Typography>
                 {/* ICON */}
                 <ArrowRightAltIcon htmlColor="gray" />
                 <Typography>Delhi</Typography>
               </div>
               <Typography sx={{ fontSize: 12, color: "gray" }}>
-                Fri, 23 Feb
+                Sun, 10 Jul
               </Typography>
             </Stack>
             {/* ICON */}

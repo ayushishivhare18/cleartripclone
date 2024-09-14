@@ -4,6 +4,7 @@ import AirplanemodeActiveRoundedIcon from "@mui/icons-material/AirplanemodeActiv
 import ApartmentRoundedIcon from "@mui/icons-material/ApartmentRounded";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 import LuggageOutlinedIcon from "@mui/icons-material/LuggageOutlined";
+import { IoIosBus } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
 import { OffersContext } from "../../../contexts/OfferDetailsProvider";
 import { Box, Stack } from "@mui/material";
@@ -82,6 +83,27 @@ const SideNavbar = () => {
         >
           <LuggageOutlinedIcon />
           <span>My trips</span>
+        </Link>
+      </Box>
+
+      <Box
+        sx={{
+          display: {
+            xs: "none",
+            sm: "block",
+          },
+        }}
+      >
+        <Link
+          className={
+            pathname === "/bus"
+              ? "leftSection active-left-btn"
+              : "leftSection"
+          }
+          onClick={notify}
+        >
+          <IoIosBus />
+          <span>Bus</span>
         </Link>
       </Box>
 
